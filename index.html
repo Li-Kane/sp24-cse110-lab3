@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Equipment App Meeting</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <header>
+      <h1>Equipment App Standup #7</h1>
+      <hr> 
+      <div>
+        <h3>Check-ins</h3>
+        <h3>Meeting Date: 10/27/2025</h3>
+        <details>
+          <summary>Attendance</summary>
+          <ol>
+            <li>John Oliver</li>
+            <li>Lola Chair</li>
+            <li>Gerry Marbles</li>
+            <li>Stu Hooper</li>
+            <li>Yaresh Tyler</li>
+          </ol>
+        </details>
+      </div>
+    </header>
+    <section>
+      <h2>Table of Contents</h2>
+      <nav>
+        <ul>
+          <li><a href="#Summary">Summary</a></li>
+          <li><a href="#Agenda">Agenda</a></li>
+          <li><a href="#Notes">Notes</a></li>
+          <li><a href="#Unfinished">Unfinished Business From Last Meeting</a></li>
+          <li><a href="#Upcoming">Upcoming Issues</a></li>
+          <li><a href="#Delegated">Delegated Tasks</a></li>
+          <li><a href="#Comments">Other Comments</a></li>
+          <li><a href="#Feedback">Feedback Form</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section>
+      <h2 id="Summary">Summary</h2>
+      <p>Today's meeting was a <i>success.</i> After clearing up a misunderstanding by the boss, the team discussed the current<br>
+        progress on the database. After <em>fixing an issue</em> that cause the database to be open for writing for longer than<br>
+        needed, the team was also able to develop a <em>more efficient query system</em>. Moving forward, they plan to test metrics,<br>
+        and <em>make sure that the database is secure</em>. The database is on track to be completed by the end of the month.<br>
+      </p>
+      <audio controls>
+        <source src="./assets/meeting_audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <figure>
+        <img src="./assets/db.jpg" alt="Database Image" width="600">
+        <figcaption>Current Database Setup</figcaption>
+      </figure>
+    </section>
+    <section>
+      <h2 id="Agenda">Agenda</h2>
+      <ol>
+        <li>Updates and Check-ins</li>
+        <li>Benchmarking and Making Metrics</li>
+        <li>Discussing the next steps</li>
+        <li>Planning and Goal-setting</li>
+        <li>Feedback and Suggestions</li>
+      </ol>
+    </section>
+    <section>
+      <h2 id="Notes">Notes</h2>
+      <p>An unfinished error from last week was that the database would stay open for write access for much longer <br>
+        than necessary, causing permission and access issues. This week, by incorporating a locking mechanism, the team<br>
+        solved the issue. Then, after John Oliver accused others of deleting the codebase, the misunderstanding was quickly<br>
+        cleared up. Additionally, the team discussed current progress, where they had created a more efficient query systems<br>
+        using a userId, greatly reducing the amount of code necessary to make a query. Moving into the future, the team plans<br>
+        to test the speed of queries and benchmark it, so see if more optimization is needed. Here is a link to documentation<br>
+        that we plan to use: <a href="https://reactnative.dev/docs/getting-started">link.</a></p>
+      <figure>
+        <img src="./assets/query.jpg" alt="Query Image" width="500">
+        <figcaption>Depiction of reduction in parameters for a query call</figcaption>
+      </figure>
+      <video width="400" height="300" controls>
+        <source src="./assets/meeting.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+    <section>
+      <h2 id="Unfinished">Unfinished Business From Last Meeting</h2>
+      <ul>
+        <li>Bug where database was open longer than expected</li>
+        <li>John Oliver's misunderstanding</li>
+        <li>Database occasionally crashes</li>
+      </ul>
+    </section>
+    <section>
+      <h2 id="Upcoming">Upcoming Issues</h2>
+      <ul>
+        <li>Frontend is <strong>slow</strong></li>
+        <li>Database is <strong>not secure</strong></li>
+        <li>Database <strong>not yet tested with large amounts of data</strong></li>
+        <li>Webserver <strong>dependencies need updating</strong></li>
+        <li><strong>Documentation hasn't been written</strong> for the database</li>
+      </ul>
+    </section>
+    <section>
+      <h2 id="Delegated">Delegated Tasks</h2>
+      <ul>
+        <li><b>John Oliver:</b> research into industry standards for queries and set requirements.</li>
+        <li><b>Lola Chair:</b> test the database and see if it is secure.</li>
+        <li><b>Gerry Marbles:</b> benchmark the database and see if it is efficient.</li>
+        <li><b>Stu Hooper:</b> begin syncing the database to the application.</li>
+        <li><b>Yaresh Tyler:</b> research into deploying the database and making it scalable.</li>
+      </ul>
+    </section>
+    <section>
+      <h2 id="Comments">Other Comments</h2>
+      <ul>
+        <li>John was worried about how to integrate our database with the application.</li>
+        <li>Lola is going on vacation next week, and may have to delay her progress.</li>
+        <li>A company picnic is occuring on Thursday, which is optional.</li>
+        <li>Most employees aren't available to work on Oct. 31st (Halloween).</li>
+      </ul>
+    </section>
+  </body>
+  <section>
+    <h2 id="Feedback">Feedback Form</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="date" required>Date:</label>
+      <input type="date" id="date" name="date" value="2018-07-22" min="2018-01-01" />
+      <fieldset>
+        <legend>Department</legend>
+        <input type="radio" id="HR" name="department" value="HR" />
+        <label for="HR">HR</label><br />
+        <input type="radio" id="Technical" name="department" value="Technical" />
+        <label for="Technical">Technical</label><br />
+        <input type="radio" id="Other" name="department" value="Other" />
+        <label for="Other">Other</label>
+      </fieldset>
+      <fieldset>
+        <legend>Company Events Attended</legend>
+        <input type="checkbox" id="Field" name="event" value="Field" />
+        <label for="Field">Field Day</label><br />
+        <input type="checkbox" id="Pizza" name="event" value="Pizza" />
+        <label for="Pizza">Pizza Party</label><br />
+        <input type="checkbox" id="Pool" name="event" value="Pool" />
+        <label for="Pool">Pool Adventure</label>
+      </fieldset>
+      <br>  
+      <label for="emotions">Select How You Feel:</label>
+      <select name="emotions" id="emotions">
+        <option value="Super Bad">Super Bad</option>
+        <option value="Bad">Bad</option>
+        <option value="Okay">Okay</option>
+        <option value="Good">Good</option>
+        <option value="Super Good">Super Good</option>
+      </select>
+      <br>
+      <label for="boss-choice">Who Is Your Boss:</label>
+      <input list="boss-flavors" id="boss-choice" name="boss-choice" />
+      <datalist id="boss-flavors">
+        <option value="John Oliver"></option>
+        <option value="Linsey Hart"></option>
+        <option value="Joe Storm"></option>
+        <option value="Henry Li"></option>
+        <option value="Allison Star"></option>
+      </datalist>
+      <br>
+      <br>
+      <textarea id="w3review" name="w3review" rows="4" cols="50">
+        Enter your feedback here...
+      </textarea>
+      <br>
+      <button type="button">Submit!</button>
+    </form>
+  </section>
+  <footer>
+    <span>
+      <p>Written by: John Oliver</p>
+      <p>Contact information: kal036@ucsd.edu</p>
+    </span>
+  </footer>
+</html>
