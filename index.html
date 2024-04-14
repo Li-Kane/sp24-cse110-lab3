@@ -120,64 +120,62 @@
         <li>Most employees aren't available to work on Oct. 31st (Halloween).</li>
       </ul>
     </section>
-  </body>
-  <section>
-    <h2 id="Feedback">Feedback Form</h2>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required><br><br>
-      <label for="date" required>Date:</label>
-      <input type="date" id="date" name="date" value="2018-07-22" min="2018-01-01" />
-      <fieldset>
-        <legend>Department</legend>
-        <input type="radio" id="HR" name="department" value="HR" />
-        <label for="HR">HR</label><br />
-        <input type="radio" id="Technical" name="department" value="Technical" />
-        <label for="Technical">Technical</label><br />
-        <input type="radio" id="Other" name="department" value="Other" />
-        <label for="Other">Other</label>
-      </fieldset>
-      <fieldset>
-        <legend>Company Events Attended</legend>
-        <input type="checkbox" id="Field" name="event" value="Field" />
-        <label for="Field">Field Day</label><br />
-        <input type="checkbox" id="Pizza" name="event" value="Pizza" />
-        <label for="Pizza">Pizza Party</label><br />
-        <input type="checkbox" id="Pool" name="event" value="Pool" />
-        <label for="Pool">Pool Adventure</label>
-      </fieldset>
-      <br>  
-      <label for="emotions">Select How You Feel:</label>
-      <select name="emotions" id="emotions">
-        <option value="Super Bad">Super Bad</option>
-        <option value="Bad">Bad</option>
-        <option value="Okay">Okay</option>
-        <option value="Good">Good</option>
-        <option value="Super Good">Super Good</option>
-      </select>
-      <br>
-      <label for="boss-choice">Who Is Your Boss:</label>
-      <input list="boss-flavors" id="boss-choice" name="boss-choice" />
-      <datalist id="boss-flavors">
-        <option value="John Oliver"></option>
-        <option value="Linsey Hart"></option>
-        <option value="Joe Storm"></option>
-        <option value="Henry Li"></option>
-        <option value="Allison Star"></option>
-      </datalist>
-      <br>
-      <br>
-      <textarea id="w3review" name="w3review" rows="4" cols="50">
-        Enter your feedback here...
-      </textarea>
-      <br>
-      <button type="button">Submit!</button>
-    </form>
-  </section>
-  <footer>
-    <span>
-      <p>Written by: John Oliver</p>
+    <section>
+      <h2 id="Feedback">Feedback Form</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" value="2018-07-22" min="2018-01-01" />
+        <fieldset>
+          <legend>Department</legend>
+          <input type="radio" id="HR" name="department" value="HR" />
+          <label for="HR">HR</label><br />
+          <input type="radio" id="Technical" name="department" value="Technical" />
+          <label for="Technical">Technical</label><br />
+          <input type="radio" id="Other" name="department" value="Other" />
+          <label for="Other">Other</label>
+        </fieldset>
+        <fieldset>
+          <legend>Company Events Attended</legend>
+          <input type="checkbox" id="Field" name="event" value="Field" />
+          <label for="Field">Field Day</label><br />
+          <input type="checkbox" id="Pizza" name="event" value="Pizza" />
+          <label for="Pizza">Pizza Party</label><br />
+          <input type="checkbox" id="Pool" name="event" value="Pool" />
+          <label for="Pool">Pool Adventure</label>
+        </fieldset>
+        <br>  
+        <label for="emotions">Select How You Feel:</label>
+        <select name="emotions" id="emotions">
+          <option value="Super Bad">Super Bad</option>
+          <option value="Bad">Bad</option>
+          <option value="Okay">Okay</option>
+          <option value="Good">Good</option>
+          <option value="Super Good">Super Good</option>
+        </select>
+        <br>
+        <label for="boss-choice">Who Is Your Boss:</label>
+        <input list="boss-flavors" id="boss-choice" name="boss-choice" />
+        <datalist id="boss-flavors">
+          <option value="John Oliver"></option>
+          <option value="Linsey Hart"></option>
+          <option value="Joe Storm"></option>
+          <option value="Henry Li"></option>
+          <option value="Allison Star"></option>
+        </datalist>
+        <br>
+        <br>
+        <textarea id="w3review" name="w3review" rows="4" cols="50">
+          Enter your feedback here...
+        </textarea>
+        <br>
+        <button type="button">Submit!</button>
+      </form>
+    </section>
+    <footer>
       <p>Contact information: kal036@ucsd.edu</p>
-    </span>
-  </footer>
+      <span>Written by: Gerry Marbles</span>
+    </footer>
+  </body>
 </html>
