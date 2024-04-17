@@ -1,2 +1,2 @@
 # Lab 2 - Starter
-[page](https://li-kane.github.io/Lab2_Starter/)
+[page](https://li-kane.github.io/sp24-cse110-lab3/)
