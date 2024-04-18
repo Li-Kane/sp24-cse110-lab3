@@ -7,20 +7,98 @@ a {
 #main {
     margin: 0;
     --main-bg-color: #040404;
-    background-color: var(--main-bg-color, black);
+    background-color: black;
     color: white;
+    --section-bg-color: hsla(202, 82%, 75%, 0.5); /* blue reused color */
 }
 
-#header {
-    background-color: color(display-p3 1 0.5 0);
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    max-width: 70%;
+    height: 1000px;
+    margin: auto;
+    padding: 1em;
+    background-color: var(--section-bg-color, lightblue);
+    border-radius: 1em;
+    border-width: 0.4em;
+    border-color: white;
+    border-style: dashed;
+}
+
+.feedback-section {
+    align-items: center;
+    justify-self: center;
+}
+
+figure {
+    margin: 0;  /* remove default margin */
+}
+
+footer {
+    background-color: color(display-p3 1 0.5 0); /* orange */
+    padding: 1em;
+    text-align: center;
+}
+
+#form-title {
+    order: -1;
+}
+
+/* Grid layout for bloggy content */
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+/* each section in the grid */
+.grid-elem {
+    background-color: var(--section-bg-color, lightblue);
+    border-radius: 1em;
+    border-width: 0.4em;
+    border-color: white;
+    border-style: dashed;
+    margin: 5px;
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+header {
+    background-color: color(display-p3 1 0.5 0); /* orange */;
 }
 
 /* Prevent gap between title header and top of page */
 h1 {
     margin-top: 0;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
 }
 
 h2 {
-    color: color-mix(in srgb, red 30%, white 70%);
+    color: color-mix(in srgb, red 30%, white 70%); /* pink */
+}
+
+#grid-header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+p {
+    border-width: 1em;
+    border-color: white;
 }
   
+/* Each topic in the meeting is a section element */
+.section {
+    background-color: var(--section-bg-color, lightblue);
+    padding: 1em 4em 1em 4em;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 1em;
+    width: 85%;
+    color: white;
+}
