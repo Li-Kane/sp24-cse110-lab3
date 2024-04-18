@@ -9,16 +9,23 @@ a {
     --main-bg-color: #040404;
     background-color: black;
     color: white;
-    --section-bg-color: hsla(202, 82%, 75%, 0.5); /* custom reused variable */
+    --section-bg-color: hsla(202, 82%, 75%, 0.5); /* blue reused color */
 }
 
 .feedback-form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-around;
     max-width: 70%;
-    height: 700px;
+    height: 1000px;
+    margin: auto;
+    padding: 1em;
+    background-color: var(--section-bg-color, lightblue);
+    border-radius: 1em;
+    border-width: 0.4em;
+    border-color: white;
+    border-style: dashed;
 }
 
 .feedback-section {
@@ -34,6 +41,10 @@ footer {
     background-color: color(display-p3 1 0.5 0); /* orange */
     padding: 1em;
     text-align: center;
+}
+
+#form-title {
+    order: -1;
 }
 
 /* Grid layout for bloggy content */
@@ -68,6 +79,11 @@ h1 {
 
 h2 {
     color: color-mix(in srgb, red 30%, white 70%); /* pink */
+}
+
+#grid-header {
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 p {
