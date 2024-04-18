@@ -1,0 +1,26 @@
+/* Custom color for all my links */
+a {
+    color: hsla(202, 82%, 75%, 1);
+}
+
+/* Overall Color scheme will be black, blue, and white */
+#main {
+    margin: 0;
+    --main-bg-color: #040404;
+    background-color: var(--main-bg-color, black);
+    color: white;
+}
+
+#header {
+    background-color: color(display-p3 1 0.5 0);
+}
+
+/* Prevent gap between title header and top of page */
+h1 {
+    margin-top: 0;
+}
+
+h2 {
+    color: color-mix(in srgb, red 30%, white 70%);
+}
+  
