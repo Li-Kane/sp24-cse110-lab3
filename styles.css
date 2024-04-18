@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
+
 /* Custom color for all my links */
 a {
     color: hsla(202, 82%, 75%, 1);
@@ -37,6 +39,7 @@ circle:hover {
     background-color: black;
     color: white;
     --section-bg-color: hsla(202, 82%, 75%, 0.5); /* blue reused color */
+    font-family: "Jersey 20", sans-serif;
 }
 
 .feedback-form {
@@ -95,6 +98,7 @@ footer {
     border-style: dashed;
     margin: 5px;
     padding: 0.5em 1em 0.5em 1em;
+    min-width: 300px;
 }
 
 header {
@@ -110,16 +114,12 @@ h1 {
 
 h2 {
     color: color-mix(in srgb, red 30%, white 70%); /* pink */
+    text-decoration: underline;
 }
 
 #grid-header {
     grid-column-start: 1;
     grid-column-end: 3;
-}
-
-p {
-    border-width: 1em;
-    border-color: white;
 }
   
 /* Each topic in the meeting is a section element */
@@ -158,6 +158,10 @@ p {
     #vid {
         display: block;
         position: relative;
+    }
+
+    p {
+        text-align: center;
     }
 }
 
