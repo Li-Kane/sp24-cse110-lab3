@@ -3,6 +3,11 @@ a {
     color: hsla(202, 82%, 75%, 1);
 }
 
+/* for figures and videos */
+.assets {
+    width: 40%;
+}
+
 a:active {
     color: greenyellow;
 }
@@ -59,6 +64,10 @@ figure {
     margin: 0;  /* remove default margin */
 }
 
+#fig {
+    display: inline-block;
+}
+
 footer {
     background-color: color(display-p3 1 0.5 0); /* orange */
     padding: 1em;
@@ -86,10 +95,6 @@ footer {
     border-style: dashed;
     margin: 5px;
     padding: 0.5em 1em 0.5em 1em;
-}
-
-#fig {
-    display: inline-block;
 }
 
 header {
@@ -137,5 +142,40 @@ p {
 /* it looks ugly but I need an absolute position */
 #vid {
     display: inline-block;
-    position: absolute;
+    
+}
+
+@media (width<=900px) {
+    .assets {
+        max-width: 500px;
+        width: 100%;
+    }
+
+    #fig {
+        display: block;
+    }
+
+    #vid {
+        display: block;
+        position: relative;
+    }
+}
+
+/* When the screen is small media query */
+@media (width<=600px) {
+
+    .assets {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .feedback-form {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    #grid {
+        display: flex;
+        flex-direction: column;
+    }
 }
