@@ -7,11 +7,11 @@
     <meta charset="utf-8">
   </head>
   <body id="main">
-    <header id="header">
+    <header>
       <h1>Equipment App Standup #7</h1>
       <hr> 
     </header>
-    <section>
+    <section class="section">
       <div>
         <h3>Check Ins | Date: 10/27/2025</h3>
         <details>
@@ -26,7 +26,7 @@
         </details>
       </div>
     </section>
-    <section>
+    <section class="section">
       <h2>Table of Contents</h2>
       <nav>
         <ul>
@@ -41,23 +41,23 @@
         </ul>
       </nav>
     </section>
-    <section>
-      <h2 id="Summary">Summary</h2>
-      <p>Today's meeting was a <i>success.</i> After clearing up a misunderstanding by the boss, the team discussed the current<br>
-        progress on the database. After <em>fixing an issue</em> that cause the database to be open for writing for longer than<br>
-        needed, the team was also able to develop a <em>more efficient query system</em>. Moving forward, they plan to test metrics,<br>
-        and <em>make sure that the database is secure</em>. The database is on track to be completed by the end of the month.<br>
+    <section class="section">
+      <h2 class="section-elem">Summary</h2>
+      <p class="section-elem">Today's meeting was a <i>success.</i> After clearing up a misunderstanding by the boss, the team discussed the current
+        progress on the database. After <em>fixing an issue</em> that cause the database to be open for writing for longer than
+        needed, the team was also able to develop a <em>more efficient query system</em>. Moving forward, they plan to test metrics,
+        and <em>make sure that the database is secure</em>. The database is on track to be completed by the end of the month.
       </p>
-      <audio controls>
+      <audio class="section-elem" controls>
         <source src="./assets/meeting_audio.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
-      <figure>
+      <figure class="section-elem">
         <img src="./assets/db.jpg" alt="Database Image" width="600">
         <figcaption>Current Database Setup</figcaption>
       </figure>
     </section>
-    <section>
+    <section class="section">
       <h2 id="Agenda">Agenda</h2>
       <ol>
         <li>Updates and Check-ins</li>
@@ -67,14 +67,14 @@
         <li>Feedback and Suggestions</li>
       </ol>
     </section>
-    <section>
+    <section class="section">
       <h2 id="Notes">Notes</h2>
-      <p>An unfinished error from last week was that the database would stay open for write access for much longer <br>
-        than necessary, causing permission and access issues. This week, by incorporating a locking mechanism, the team<br>
-        solved the issue. Then, after John Oliver accused others of deleting the codebase, the misunderstanding was quickly<br>
-        cleared up. Additionally, the team discussed current progress, where they had created a more efficient query systems<br>
-        using a userId, greatly reducing the amount of code necessary to make a query. Moving into the future, the team plans<br>
-        to test the speed of queries and benchmark it, so see if more optimization is needed. Here is a link to documentation<br>
+      <p>An unfinished error from last week was that the database would stay open for write access for much longer 
+        than necessary, causing permission and access issues. This week, by incorporating a locking mechanism, the team
+        solved the issue. Then, after John Oliver accused others of deleting the codebase, the misunderstanding was quickly
+        cleared up. Additionally, the team discussed current progress, where they had created a more efficient query systems
+        using a userId, greatly reducing the amount of code necessary to make a query. Moving into the future, the team plans
+        to test the speed of queries and benchmark it, so see if more optimization is needed. Here is a link to documentation
         that we plan to use: <a href="https://reactnative.dev/docs/getting-started">link.</a></p>
       <figure>
         <img src="./assets/query.jpg" alt="Query Image" width="500">
@@ -85,46 +85,48 @@
         Your browser does not support the video tag.
       </video>
     </section>
-    <section>
-      <h2 id="Unfinished">Unfinished Business From Last Meeting</h2>
-      <ul>
-        <li>Bug where database was open longer than expected</li>
-        <li>John Oliver's misunderstanding</li>
-        <li>Database occasionally crashes</li>
-      </ul>
+    <section id="grid" class="section">
+      <section class="grid-elem">
+        <h2 id="Unfinished">Unfinished Business From Last Meeting</h2>
+        <ul>
+          <li>Bug where database was open longer than expected</li>
+          <li>John Oliver's misunderstanding</li>
+          <li>Database occasionally crashes</li>
+        </ul>
+      </section>
+      <section class="grid-elem">
+        <h2 id="Upcoming">Upcoming Issues</h2>
+        <ul>
+          <li>Frontend is <strong>slow</strong></li>
+          <li>Database is <strong>not secure</strong></li>
+          <li>Database <strong>not yet tested with large amounts of data</strong></li>
+          <li>Webserver <strong>dependencies need updating</strong></li>
+          <li><strong>Documentation hasn't been written</strong> for the database</li>
+        </ul>
+      </section>
+      <section class="grid-elem">
+        <h2 id="Delegated">Delegated Tasks</h2>
+        <ul>
+          <li><b>John Oliver:</b> research into industry standards for queries and set requirements.</li>
+          <li><b>Lola Chair:</b> test the database and see if it is secure.</li>
+          <li><b>Gerry Marbles:</b> benchmark the database and see if it is efficient.</li>
+          <li><b>Stu Hooper:</b> begin syncing the database to the application.</li>
+          <li><b>Yaresh Tyler:</b> research into deploying the database and making it scalable.</li>
+        </ul>
+      </section>
+      <section class="grid-elem">
+        <h2 id="Comments">Other Comments</h2>
+        <ul>
+          <li>John was worried about how to integrate our database with the application.</li>
+          <li>Lola is going on vacation next week, and may have to delay her progress.</li>
+          <li>A company picnic is occuring on Thursday, which is optional.</li>
+          <li>Most employees aren't available to work on Oct. 31st (Halloween).</li>
+        </ul>
+      </section>
     </section>
-    <section>
-      <h2 id="Upcoming">Upcoming Issues</h2>
-      <ul>
-        <li>Frontend is <strong>slow</strong></li>
-        <li>Database is <strong>not secure</strong></li>
-        <li>Database <strong>not yet tested with large amounts of data</strong></li>
-        <li>Webserver <strong>dependencies need updating</strong></li>
-        <li><strong>Documentation hasn't been written</strong> for the database</li>
-      </ul>
-    </section>
-    <section>
-      <h2 id="Delegated">Delegated Tasks</h2>
-      <ul>
-        <li><b>John Oliver:</b> research into industry standards for queries and set requirements.</li>
-        <li><b>Lola Chair:</b> test the database and see if it is secure.</li>
-        <li><b>Gerry Marbles:</b> benchmark the database and see if it is efficient.</li>
-        <li><b>Stu Hooper:</b> begin syncing the database to the application.</li>
-        <li><b>Yaresh Tyler:</b> research into deploying the database and making it scalable.</li>
-      </ul>
-    </section>
-    <section>
-      <h2 id="Comments">Other Comments</h2>
-      <ul>
-        <li>John was worried about how to integrate our database with the application.</li>
-        <li>Lola is going on vacation next week, and may have to delay her progress.</li>
-        <li>A company picnic is occuring on Thursday, which is optional.</li>
-        <li>Most employees aren't available to work on Oct. 31st (Halloween).</li>
-      </ul>
-    </section>
-    <section>
+    <section id="feedback-section" class="section">
       <h2 id="Feedback">Feedback Form</h2>
-      <form>
+      <form class="feedback-form">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br><br>
         <label for="date">Date:</label>
