@@ -3,6 +3,28 @@ a {
     color: hsla(202, 82%, 75%, 1);
 }
 
+a:active {
+    color: greenyellow;
+}
+
+/* svg container for circle */
+#badge {
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    width: 100px;
+    height: 100px;
+}
+
+/* Fixed circle badge */
+circle {
+    fill: yellow;
+}
+
+circle:hover {
+    fill: hsla(202, 82%, 75%, 1);
+}
+
 /* Overall Color scheme will be black, blue, and white */
 #main {
     margin: 0;
@@ -66,6 +88,10 @@ footer {
     padding: 0.5em 1em 0.5em 1em;
 }
 
+#fig {
+    display: inline-block;
+}
+
 header {
     background-color: color(display-p3 1 0.5 0); /* orange */;
 }
@@ -101,4 +127,15 @@ p {
     border-radius: 1em;
     width: 85%;
     color: white;
+}
+
+/* Html p not rendered */
+#secret {
+    display: none;
+}
+
+/* it looks ugly but I need an absolute position */
+#vid {
+    display: inline-block;
+    position: absolute;
 }

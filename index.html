@@ -11,6 +11,10 @@
       <h1>Equipment App Standup #7</h1>
       <hr> 
     </header>
+    <p id="secret">Secret! You can't see me</p>
+    <svg id="badge">
+      <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
     <section class="section">
       <div>
         <h3>Check Ins | Date: 10/27/2025</h3>
@@ -76,11 +80,11 @@
         using a userId, greatly reducing the amount of code necessary to make a query. Moving into the future, the team plans
         to test the speed of queries and benchmark it, so see if more optimization is needed. Here is a link to documentation
         that we plan to use: <a href="https://reactnative.dev/docs/getting-started">link.</a></p>
-      <figure>
+      <figure id="fig">
         <img src="./assets/query.jpg" alt="Query Image" width="500">
         <figcaption>Depiction of reduction in parameters for a query call</figcaption>
       </figure>
-      <video width="400" height="300" controls>
+      <video id="vid" width="400" height="300" controls>
         <source src="./assets/meeting.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
